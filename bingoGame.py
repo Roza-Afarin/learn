@@ -13,7 +13,7 @@ class BingoGame:
 
     def check_ansewr(self):
         if self.has_guess_left():
-            ansewr = int(input(f'{self.name} enter your guess: '))
+            ansewr = int(input(f'{self.name} Enter your guess: '))
             if ansewr > self.__rand_num:
                 print('guess lower')
             elif ansewr < self.__rand_num:
@@ -50,7 +50,7 @@ class GameController:
                     player.check_ansewr()
             if BingoGame.game_has_winner():
                 break
-        
+      
 if __name__ == '__main__':
     while True:
         order = input("enter your order: 'add' to add player,'start' to start game and exit  ")
